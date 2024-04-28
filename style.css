@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #e6d3f5;
+}
+
+body {
+  font-family: "Jersey 10", sans-serif;
+  color: #7a618f;
+}
+
+h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  font-size: 3em;
+}
+
+button {
+  font-family: "Pixelify Sans", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 0pc;
+  left: 50%;
+  color: #7a618f;
+}
+
+
+.container {
+  background-color: #ceb1e6;
+  width: min(80%, 400px);
+  height: max(25%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em 2em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  margin-right: 0.6em;
+  border-radius: 0.5em;
+  color: #7a618f;
+  border-color: #e6d3f5;
+  min-width: 25%;
+  min-height: 35%;
+}
+
+.btn:hover {
+  background-color: #7a618f;
+  color: #e6d3f5;
+}
+
+.selection-panel {
+  justify-content: center;
+}
+
+#time {
+  text-align: center;
+  padding: 0.5em 1em;
+  font-family: "Jersey 10", sans-serif;
+  color: #7a618f;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.control-btns {
+  justify-content: center;
+  gap: 2em;
+  display: flex;
+  background-color: transparent;
+  border-radius: 0.5em;
+  min-width: 25%;
+  min-height: 35%;
+}
+
+.ctrl-btn {
+  background-color: transparent;
+  border: none;
+  outline: none; 
+  color: #7a618f;
+  font-size: 2em;
+}
+
+.ctrl-btn:hover {
+  color: #e6d3f5;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans-regular {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
