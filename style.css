@@ -24,12 +24,15 @@ footer {
   color: #7a618f;
   font-size: 50%;
   
+  @media screen and (max-height: 300px) {
+     display: none;
+  }
 }
 
 .container {
   background-color: #ceb1e6;
-  width: min(80%, 400px);
-  height: max(25%);
+  width: min(70%, 400%);
+  height: max(30%);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -45,7 +48,6 @@ footer {
   border-radius: 0.5em;
   color: #7a618f;
   border-color: #e6d3f5;
-  min-height: 3.5vw;
 }
 
 .btn:hover {
@@ -53,34 +55,46 @@ footer {
   color: #e6d3f5;
 }
 
-.selection-panel {
+.section-panel {
   justify-content: center;
+  
+  @media screen and (max-height: 400px) {
+     display: none;
+  }
+  @media screen and (max-width: 550px) {
+     display: none;
+  }
+}
+
+.control-panel {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #time {
   text-align: center;
   font-family: "Jersey 10", sans-serif;
   color: #7a618f;
-  font-size: 15vw;
+  font-size: min(15vw, 8em);
   font-weight: 600;
 }
 
-.control-panel {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .control-btns {
-  text-align: center;
-  justify-content: center;
-  gap: 2em;
   display: flex;
+  justify-content: center;
+  gap: 1em;
   background-color: transparent;
-  font-size: 3vw;
   border-radius: 0.5em;
-  min-height: 3.5vw;
+
+  @media screen and (max-height: 400px) {
+     display: none;
+  }
+  @media screen and (max-width: 550px) {
+     display: none;
+  }
 }
 
 .ctrl-btn {
@@ -88,7 +102,9 @@ footer {
   border: none;
   outline: none; 
   color: #7a618f;
-  font-size: 2em;
+  font-size: 30px;
+  height: 30%;
+  min-width: 25%;
 }
 
 .ctrl-btn:hover {
@@ -103,6 +119,10 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 5vw;
+
+  @media screen and (max-height: 300px) {
+     display: none;
+  }
 }
 
 .hide {
