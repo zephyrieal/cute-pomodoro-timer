@@ -70,8 +70,7 @@ footer {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1vw;
 }
 
 #time {
@@ -83,13 +82,14 @@ footer {
 }
 
 .control-btns {
-  display: flex;
   justify-content: center;
   gap: 1em;
   background-color: transparent;
   border-radius: 0.5em;
+  display: flex;
+  padding: 1em 2em;
 
-  @media screen and (max-height: 400px) {
+  @media screen and (max-height: 450px) {
      display: none;
   }
   @media screen and (max-width: 550px) {
