@@ -1,6 +1,6 @@
 # Cute Pomodoro Timer (NOW WITH CATS!)
 ## Try the timer here
-https://zephyrieal.github.io/
+https://zephyrieal.github.io/cute-pomodoro-timer/
 ## Features
 - 25/5/15 Pomodoro timer
 - Custom timer (minutes only right now)
