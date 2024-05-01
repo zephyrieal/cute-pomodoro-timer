@@ -5,67 +5,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Cute Pomodoro Timer</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
 
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet">
 
 
   <!-- Icons -->
   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  
+  <link rel="stylesheet" href="style.css"/>
+
 </head>
 
 <body>
 
-  <div class = "title">
-    <b>Pomodoro Timer</b>
-    <img src="Catttt.png" alt="FAT CAT" style="width: 4vw";>
-  </div> 
+<div class="title">
+  <b>Pomodoro Timer</b>
+  <img src="Catttt.png" alt="FAT CAT" style="width: 4vw" ;>
+</div>
 
-  <footer>
-    <div style = "font-family: Pixelify Sans">
-      <p>Made With ❤️ by Zeph</p>
-      <p>This is a WIP website. Please let me know if there are bugs via Discord @zephyrieal</p>
-      <p><a href="https://github.com/zephyrieal">github.com/zephyrieal</a></p>
-    </div>
-  </footer> 
-  
-  <div class = "container">
-    <div class = "section-panel">
-      <button id="focus" class="btn btn-focus">Focus</button>
-      <button id="short-break" class="btn btn-shortbreak">Short Break</button>
-      <button id="long-break" class="btn btn-longbreak">Long Break</button>
-      <button id="custom-time" class="btn btn-custom">Custom Time</button>
-    </div>
+<footer>
+  <div style="font-family: Pixelify Sans">
+    <p>Made With ❤️ by Zeph</p>
+    <p>This is a WIP website. Please let me know if there are bugs via Discord @zephyrieal</p>
+    <p><a href="https://github.com/zephyrieal">github.com/zephyrieal</a></p>
+  </div>
+</footer>
 
-    <div class = "control-panel">
-      <span id="time"></span>
-      <div class="control-btns">
-        <button id="start" class="ctrl-btn show">
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <button id="pause" class="ctrl-btn hide">
-          <i class="fa-solid fa-pause"></i>
-        </button>
-        <button id="reset" class="ctrl-btn hide">
-          <i class="fa-solid fa-rotate-right"></i>
-        </button>
-      </div>
+<div class="container">
+  <div class="section-panel">
+    <button id="focus" class="btn btn-focus">Focus</button>
+    <button id="short-break" class="btn btn-shortbreak">Short Break</button>
+    <button id="long-break" class="btn btn-longbreak">Long Break</button>
+    <button id="custom-time" class="btn btn-custom">Custom Time</button>
+  </div>
+
+  <div class="control-panel">
+    <span id="time"></span>
+    <div class="control-btns">
+      <button id="start" class="ctrl-btn show">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button id="pause" class="ctrl-btn hide">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+      <button id="reset" class="ctrl-btn hide">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
     </div>
   </div>
-  
+</div>
 
-  <!-- Script -->
-  <script src="script.js"></script>
-  
+<dialog id="custom-time-dialog">
+  <form id="custom-time-form">
+    <h2>
+      Set a custom time
+    </h2>
+    <div class="row">
+      <div class="vertical-picker">
+        <button type="button" data-direction="up" data-value="minute-1"><i
+            class="fa-solid fa-caret-up"></i></button>
+        <input readonly name="minute-1" value="0"/>
+        <button type="button" data-direction="down" data-value="minute-1"><i
+            class="fa-solid fa-caret-down"></i></button>
+      </div>
+      <div class="vertical-picker">
+        <button type="button" data-direction="up" data-value="minute-2"><i
+            class="fa-solid fa-caret-up"></i></button>
+        <input readonly name="minute-2" value="0"/>
+        <button type="button" data-direction="down" data-value="minute-2"><i
+            class="fa-solid fa-caret-down"></i></button>
+      </div>
+      <span>:</span>
+      <div class="vertical-picker">
+        <button type="button" data-direction="up" data-value="second-1"><i
+            class="fa-solid fa-caret-up"></i></button>
+        <input readonly name="second-1" value="0"/>
+        <button type="button" data-direction="down" data-value="second-1"><i
+            class="fa-solid fa-caret-down"></i></button>
+      </div>
+      <div class="vertical-picker">
+        <button type="button" data-direction="up" data-value="second-2"><i
+            class="fa-solid fa-caret-up"></i></button>
+        <input readonly name="second-2" value="0"/>
+        <button type="button" data-direction="down" data-value="second-2"><i
+            class="fa-solid fa-caret-down"></i></button>
+      </div>
+    </div>
+    <div class="row">
+      <button id="set-custom-time" class="btn" type="submit">Set</button>
+      <button id="cancel-custom-time" class="btn" type="reset">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
+
+<!-- Script -->
+<script src="script.js"></script>
+
 </body>
 
 </html>

@@ -23,9 +23,9 @@ footer {
   width: 100%;
   color: #7a618f;
   font-size: 50%;
-  
+
   @media screen and (max-height: 300px) {
-     display: none;
+    display: none;
   }
 }
 
@@ -57,12 +57,12 @@ footer {
 
 .section-panel {
   justify-content: center;
-  
+
   @media screen and (max-height: 400px) {
-     display: none;
+    display: none;
   }
   @media screen and (max-width: 550px) {
-     display: none;
+    display: none;
   }
 }
 
@@ -90,17 +90,17 @@ footer {
   padding: 1em 2em;
 
   @media screen and (max-height: 450px) {
-     display: none;
+    display: none;
   }
   @media screen and (max-width: 550px) {
-     display: none;
+    display: none;
   }
 }
 
 .ctrl-btn {
   background-color: transparent;
   border: none;
-  outline: none; 
+  outline: none;
   color: #7a618f;
   font-size: 30px;
   height: 30%;
@@ -121,13 +121,14 @@ footer {
   font-size: 5vw;
 
   @media screen and (max-height: 300px) {
-     display: none;
+    display: none;
   }
 }
 
 .hide {
   display: none;
 }
+
 .show {
   display: block;
 }
@@ -143,4 +144,51 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+dialog {
+  background-color: #e6d3f5;
+  border-radius: 1em;
+  padding: 2em;
+  border: none;
+  box-shadow: 3px 5px 0 0 #7a618f;
+  color: #7a618f;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+dialog h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18pt;
+}
+
+.vertical-picker, .vertical-picker input, .vertical-picker button {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  color: #7a618f;
+  background: none;
+  border: none;
+  font-size: 18pt;
+}
+
+.vertical-picker input {
+  width: 1ch;
+  font-family: "Jersey 10", sans-serif !important;
 }
