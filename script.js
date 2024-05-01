@@ -63,7 +63,7 @@ function resetTimer() {
         minCount + 1)}:00`
   } else if (activeWindow === "custom") {
     const firstSec = (secCount + 1) % 60;
-    const firstMin = minCount + (secCount === 0 ? 1 : 0);
+    const firstMin = minCount + (firstSec === 0 ? 1 : 0);
     time.textContent = `${appendZero(firstMin)}:${appendZero(firstSec)}`;
   } else {
     time.textContent = `${minCount + 1}:00`;
@@ -90,8 +90,10 @@ function startTimer() {
       if (minCount == 0 && secCount <= 5 && secCount != 0) {
         click.play();
       }
-      if (minCount == 0 && secCount == 0) {
+      if (minCount <= 0 && secCount <= 0) {
         end.play();
+        pauseTimer();
+        time.textContent = "00:00";
       }
     }, 1000);
   }
