@@ -58,23 +58,23 @@ footer {
 .section-panel {
   justify-content: center;
 
-  /* @media screen and (max-height: 400px) {
+  @media screen and (max-height: 400px) {
     display: none;
   }
   @media screen and (max-width: 300px) {
     display: none;
-  } */
+  }
 }
 
 .control-panel {
+  text-align: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-top: 1vw;
+  align-items: center;
 }
 
 #time {
-  text-align: center;
   font-family: "Jersey 10", sans-serif;
   color: #7a618f;
   font-size: min(15vw, 8em);
@@ -89,12 +89,12 @@ footer {
   display: flex;
   padding: 1em 2em;
 
-  /* @media screen and (max-height: 450px) {
+  @media screen and (max-height: 450px) {
     display: none;
   }
   @media screen and (max-width: 300px) {
     display: none;
-  } */
+  }
 }
 
 .ctrl-btn {
