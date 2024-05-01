@@ -58,12 +58,12 @@ footer {
 .section-panel {
   justify-content: center;
 
-  @media screen and (max-height: 400px) {
+  /* @media screen and (max-height: 400px) {
     display: none;
   }
   @media screen and (max-width: 300px) {
     display: none;
-  }
+  } */
 }
 
 .control-panel {
@@ -89,12 +89,12 @@ footer {
   display: flex;
   padding: 1em 2em;
 
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     display: none;
   }
   @media screen and (max-width: 300px) {
     display: none;
-  }
+  } */
 }
 
 .ctrl-btn {
